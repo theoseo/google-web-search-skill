@@ -49,14 +49,15 @@ Supported models:
 - 📊 Latest statistics and data
 - 🔍 Any information requiring recent sources
 
-## vs. google-search Skill
+## How It Works
 
-| Feature | google-web-search (this) | google-search |
-|---------|--------------------------|---------------|
-| API | Gemini + Google Search | Google Custom Search |
-| Setup | 1 API key | 2 (API key + CSE ID) |
-| Output | Natural language | JSON |
-| Use case | Q&A, facts | Search results |
+This skill uses Gemini's **grounding with Google Search** tool, which:
+1. Executes a Google search for your query
+2. Processes the search results
+3. Generates a natural language answer
+4. Includes verifiable citations
+
+**Key advantage:** You get curated answers instead of raw search results.
 
 ## Requirements
 
