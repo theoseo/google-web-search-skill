@@ -1,6 +1,24 @@
 ---
 name: google-web-search
 description: Enables grounded question answering by automatically executing the Google Search tool within Gemini models. Use when the required information is recent (post knowledge cutoff) or requires verifiable citation.
+metadata:
+  {
+    "openclaw":
+      {
+        "emoji": "🔍",
+        "requires": { "env": ["GEMINI_API_KEY"] },
+        "primaryEnv": "GEMINI_API_KEY",
+        "install":
+          [
+            {
+              "id": "python-deps",
+              "kind": "shell",
+              "command": "cd {baseDir} && (command -v uv >/dev/null && uv sync || pip install -r requirements.txt)",
+              "label": "Install Python dependencies (google-genai)",
+            },
+          ],
+      },
+  }
 ---
 
 # Google Web Search
