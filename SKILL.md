@@ -13,8 +13,8 @@ metadata:
             {
               "id": "python-deps",
               "kind": "shell",
-              "command": "cd {baseDir} && (command -v uv >/dev/null && uv sync || pip install -r requirements.txt)",
-              "label": "Install Python dependencies (google-genai)",
+              "command": "pip install -r {baseDir}/requirements.txt",
+              "label": "Install Python dependencies (google-genai, pydantic-settings)",
             },
           ],
       },
